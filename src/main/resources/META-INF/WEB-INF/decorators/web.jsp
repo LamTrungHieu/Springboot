@@ -1,15 +1,13 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
-<%@ taglib prefix= "c" uri = "jakarta.tags.core" %>
-<c:url value="/" var="URL"></c:url>
-<!DOCTYPE html>
-
+	pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="jakarta.tags.core" %>
+<c:url value="/" var="URL"> </c:url>
 <html lang="en">
 
 <!-- Head BEGIN -->
 <head>
   <meta charset="utf-8">
-  <title>Metronic Shop UI</title>
+  <title>Metronic Shop QuynhThu</title>
 
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -74,23 +72,28 @@
       </div>
     </div>
     <!-- END BEGIN STYLE CUSTOMIZER --> 
+	
 	<!-- BEGIN HEADER -->
-    <%@ include file = "/commons/web/header.jsp" %>
-<!-- END HEADER -->
-    <div class="main">
-      	<div class="container">
-      		<sitemesh:write property="body"/>
-      	</div>
-    </div>
- 		<!-- BEGIN FOOTER -->
+	<%@ include file = "/commons/web/header.jsp" %>
+	
+	<!--  END HEADER -->
+	
+	<div class="main"> 
+		<div class="container">
+			 <sitemesh:write property="body"/>
+		</div>
+		
+	</div>
+    
+	<!-- BEGIN FOOTER -->
 
 	<%@ include file = "/commons/web/footer.jsp" %>
-<!-- END FOOTER -->
+	
+	<!-- END FOOTER -->
+    
 
   
-   
     <!-- BEGIN CORE PLUGINS (REQUIRED FOR ALL PAGES) -->
-   
     <script src="${URL}assets/global/plugins/jquery.min.js" type="text/javascript"></script>
     <script src="${URL}assets/global/plugins/jquery-migrate.min.js" type="text/javascript"></script>
     <script src="${URL}assets/global/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>      
